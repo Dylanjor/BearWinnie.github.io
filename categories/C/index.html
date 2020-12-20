@@ -17,25 +17,9 @@
   <meta name="description" content="小熊维尼最好的黛比">
   <meta name="author" content="Dylanjor">
   <meta name="keywords" content="Vue Abp">
-  <title>Git命令 - BearWinnie</title>
+  <title>Categories - C# - BearWinnie</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
-  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
-
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
-    
-  
-
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
 
 
 
@@ -63,7 +47,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -162,46 +146,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Git命令">
+            <span class="h2" id="subtitle" title="Category - C#">
               
             </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-12-20 20:33" pubdate>
-        December 20, 2020 pm
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      444 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      5
-       分钟
-    </span>
-  
-
-  
-  
-</div>
 
             
           </div>
@@ -214,102 +161,40 @@
 
   <main>
     
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">1 posts in total.</p>
+  <hr>
+  
+  
+    
       
+      <p class="h5">2020</p>
+    
+    <a href="/2020/12/20/For-ABP/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">For-ABP</span>
+      <time style="float: right;">12-20</time>
+    </a>
+  
+</div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-md">
-      <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">Git命令</h1>
-            
-            <div class="markdown-body">
-              <h1 id="Git基础常用命令"><a href="#Git基础常用命令" class="headerlink" title="Git基础常用命令"></a>Git基础常用命令</h1><ul>
-<li>git init . 初始化</li>
-<li>git clone [url] 克隆</li>
-<li>git add . 添加所有至待发送区</li>
-<li>git commit -m [message] 添加标记</li>
-<li>git push 更新</li>
-<li>git status 查看状态</li>
-<li>git shortlog -sn x 显示所有提交过的用户</li>
-<li>git brach 查看本地分支</li>
-<li>git brach -r 查看远程分支</li>
-<li>git brach -a 查看本地加远程所有分支</li>
-<li>git fetch origin master 取回远程的master分支</li>
-</ul>
-<hr>
-<p>第一步在本地 仓库中 右键 打开git bash<br>然后git init 初始化<br>然后git add . + 网络git仓库路径<br>然后git status查看操作 状态 修改的什么<br>git commit “做了什么修改”<br>git push 上传</p>
-<p>前端Git地址：<a target="_blank" rel="noopener" href="https://github.com/Dylanjor/GsfCoffeeVue.git">https://github.com/Dylanjor/GsfCoffeeVue.git</a><br>后端Git地址：<a target="_blank" rel="noopener" href="https://github.com/Dylanjor/GsfCoffee.git">https://github.com/Dylanjor/GsfCoffee.git</a></p>
-<h3 id="本地ssh设置"><a href="#本地ssh设置" class="headerlink" title="本地ssh设置"></a>本地ssh设置</h3><p>$ ssh-keygen -t rsa -C ‘2545664565@qq.com’</p>
-<h3 id="使用命令分别创建两个平台的公钥"><a href="#使用命令分别创建两个平台的公钥" class="headerlink" title="使用命令分别创建两个平台的公钥"></a>使用命令分别创建两个平台的公钥</h3><p>ssh-keygen -t rsa -C “<a href="mailto:&#120;&#x78;&#x78;&#120;&#120;&#x78;&#x40;&#120;&#120;&#120;&#x2e;&#x63;&#111;&#109;">&#120;&#x78;&#x78;&#120;&#120;&#x78;&#x40;&#120;&#120;&#120;&#x2e;&#x63;&#111;&#109;</a>“ -f “id_rsa_gitee”<br>ssh-keygen -t rsa -C “<a href="mailto:&#120;&#120;&#x78;&#x78;&#x78;&#x78;&#x40;&#x78;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;">&#120;&#120;&#x78;&#x78;&#x78;&#x78;&#x40;&#x78;&#x78;&#x78;&#x2e;&#x63;&#111;&#109;</a>“ -f “id_rsa_github”</p>
-<p><code>备注：若提示ssh-keygen 不是内部或外部命令，主要是没有找到ssh-keygen.exe，所以我们要将ssh-keygen.exe文件所在的目录配置到全局变量中去。</code></p>
-<p>第一步：找到<code>C:\Program Files\Git\usr\bin</code>目录下的ssh-keygen.exe （就是其目录，不一定是C盘，具体看安装在哪个盘），然后复制其所在的路径地址</p>
-<p>第二步：找到桌面计算机-&gt;右击属性–&gt;高级系统设置–&gt;环境变量–&gt;系统变量,找到Path变量，进行编辑，End到最后，输入分号，粘贴复制的ssh-keygen所在的路径，保存；</p>
-<h3 id="配置不同的公钥"><a href="#配置不同的公钥" class="headerlink" title="配置不同的公钥"></a>配置不同的公钥</h3><p>Host github.com<br>    HostName github.com<br>    PreferredAuthentications publickey<br>    IdentityFile ~/.ssh/id_rsa</p>
-<p>Host gitee.com<br>    HostName gitee.com<br>    PreferredAuthentications publickey<br>    IdentityFile ~/.ssh/id_rsa_gitee</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/MarkDown/">MarkDown</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Git/">Git</a>
-                    
-                  </div>
-                
+
+
+
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
-              
-              
-                <div class="post-prevnext row">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2020/12/20/About/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">About</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                  </article>
-                </div>
-              
             </div>
-
-            
-          </article>
+          </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
 
     
@@ -392,15 +277,9 @@
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 

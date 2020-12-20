@@ -1,0 +1,472 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="小熊维尼最好的黛比">
+  <meta name="author" content="Dylanjor">
+  <meta name="keywords" content="Vue Abp">
+  <title>For-Vue - BearWinnie</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"dylanjor.github.io","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>BearWinnie</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="For-Vue">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-12-20 21:05" pubdate>
+        December 20, 2020 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">For-Vue</h1>
+            
+            <div class="markdown-body">
+              <h3 id="VUE、Elementui、Code的创建和使用"><a href="#VUE、Elementui、Code的创建和使用" class="headerlink" title="VUE、Elementui、Code的创建和使用"></a>VUE、Elementui、Code的创建和使用</h3><p>npm install 不然报错 web package dev server</p>
+<p>1、打开vscode的终端ctrl+`;<br>2、安装全局vue-cli客户端：npm install -g vue-cli<br>3、创建vue项目：vue init webpack （projectName项目名字）   运行vue项目：npm run dev 需要切进项目中 cd Coffee-vue<br>4、安装ElementUI：npm i element-ui -S<br>5、引入至项目中：<img src="/2020/12/20/For-Vue/1585727261448.png" srcset="/img/loading.gif" alt="1585727261448"></p>
+<p>6、取消报错的红线<br>在项目中build（编译）文件夹下webpack.base.conf.js文件中注释掉eslint的内容<img src="/2020/12/20/For-Vue/1585728290551.png" srcset="/img/loading.gif" alt="1585728290551"></p>
+<p>7、<img src="/2020/12/20/For-Vue/1585800861965.png" srcset="/img/loading.gif" alt="1585800861965"></p>
+<p>需要将其注释掉不然会在页面中有其效果<br>8、将其初始化路径更改为我们需要的路由<img src="/2020/12/20/For-Vue/1585800926956.png" srcset="/img/loading.gif" alt="1585800926956"></p>
+<p>9、<br>点击图片并改变图片的路径：简单步骤(vue的路径使用需要加:例如 :src)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;img class&#x3D;&quot;menu&quot; v-on:click&#x3D; &quot;flag&#x3D;!flag&quot; :src&#x3D;&quot;flag?menupic:crosspic&quot;&gt;<br><br>export default&#123;<br>  data () &#123;<br>    return &#123;<br>      flag: true,<br>      menupic: require(&#39;..&#x2F;picture&#x2F;menu.png&#39;),<br>      crosspic: require(&#39;..&#x2F;picture&#x2F;Cross.png&#39;),<br>      logopic: require(&#39;..&#x2F;picture&#x2F;coffeelogo.png&#39;)<br>    &#125;<br>  &#125;,<br>  methods: &#123;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>10、注意进入cd Coffee-vue必须要和文件名保持一致<img src="/2020/12/20/For-Vue/1585812586935.png" srcset="/img/loading.gif" alt="1585812586935"></p>
+<p>不然会报错<br>11、<br>走马灯图片设置 图片使用外链加载 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!--卡片走马灯--&gt;<br>        &lt;el-carousel :interval&#x3D;&quot;4000&quot; type&#x3D;&quot;card&quot; height&#x3D;&quot;350px&quot;&gt;<br>          &lt;el-carousel-item v-for&#x3D;&quot;item in listpic&quot; :key&#x3D;&quot;item&quot; width&#x3D;&quot;100%&quot;&gt;<br>            &lt;img :src&#x3D;&#39;item&#39; width&#x3D;&quot;100%&quot;&gt;<br>          &lt;&#x2F;el-carousel-item&gt;<br>        &lt;&#x2F;el-carousel&gt;<br>&lt;!--vue数据--&gt;<br>data () &#123;<br>    return &#123;<br>      flag: true,<br>      showldiv: true,<br>      showmain: true,<br>      menupic: require(&#39;..&#x2F;picture&#x2F;Menu.png&#39;),<br>      crosspic: require(&#39;..&#x2F;picture&#x2F;Cross.png&#39;),<br>      logopic: require(&#39;..&#x2F;picture&#x2F;coffeelogo.png&#39;),<br>      coffeeface: require(&#39;..&#x2F;picture&#x2F;Coffee-Face.jpg&#39;),<br>      listpic: [(&#39;https:&#x2F;&#x2F;i1.fuimg.com&#x2F;715304&#x2F;395e39fc6dd0330a.png&#39;,<br>         &#39;https:&#x2F;&#x2F;i1.fuimg.com&#x2F;715304&#x2F;a598958f4083fc17.jpg&#39;,<br>         &#39;https:&#x2F;&#x2F;i1.fuimg.com&#x2F;715304&#x2F;40405d692956cfea.jpg&#39;,<br>         &#39;https:&#x2F;&#x2F;i2.tiimg.com&#x2F;715304&#x2F;3d05a666162c5531.jpg&#39;,<br>         &#39;https:&#x2F;&#x2F;i2.tiimg.com&#x2F;715304&#x2F;46ca868eb0fa445b.jpg&#39;,<br>         &#39;https:&#x2F;&#x2F;i1.fuimg.com&#x2F;715304&#x2F;958f42f82a306944.jpg&#39;)<br>      ]<br>    &#125;<br>  &#125;,<br></code></pre></td></tr></table></figure>
+<p>12、npm run build编译后的提示 需要将文件夹直接放置在服务器上 不影响</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vue">Tip: built files are meant to be served over an HTTP server.<br>  Opening index.html over file:&#x2F;&#x2F; won&#39;t work.<br></code></pre></td></tr></table></figure>
+<p>13、 main.js的内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs vue">import Vue from &#39;vue&#39;<br>import App from &#39;.&#x2F;App&#39;<br>import router from &#39;.&#x2F;router&#39;<br>import ElementUI from &#39;element-ui&#39;<br>import &#39;element-ui&#x2F;lib&#x2F;theme-chalk&#x2F;index.css&#39;<br><br>Vue.config.productionTip &#x3D; false<br>Vue.use(ElementUI)<br>&#x2F;* eslint-disable no-new *&#x2F;<br>new Vue(&#123;<br>  &#x2F;&#x2F; el是index.html的div id<br>  el: &#39;#App&#39;,<br>  router,<br>  &#x2F;&#x2F; App模块是App.vue<br>  components: &#123; App &#125;,<br>  template: &#39;&lt;App&#x2F;&gt;&#39;<br>&#125;)<br></code></pre></td></tr></table></figure>
+<p>index.html的内容为空</p>
+<p>14、页面刷新的使用(在App页面中做定义)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;div id&#x3D;&quot;app&quot;&gt;<br>    &lt;!-- &lt;img src&#x3D;&quot;.&#x2F;assets&#x2F;logo.png&quot;&gt; --&gt;<br>    &lt;router-view v-if&#x3D;&quot;isRouterAlive&quot;&#x2F;&gt;&lt;!--这个是必须要有的跳转的路由--&gt;<br>  &lt;&#x2F;div&gt;<br>&lt;&#x2F;template&gt;<br><br>&lt;script&gt;<br>export default &#123;<br>  name: &#39;App&#39;,<br>  provide () &#123;<br>    return &#123;<br>      reload: this.reload &#x2F;&#x2F; 刷新定义<br>    &#125;<br>  &#125;,<br>  data () &#123;<br>    return &#123;<br>      isRouterAlive: true<br>    &#125;<br>  &#125;,<br>  methods: &#123;<br>    reload () &#123;<br>      this.isRouterAlive &#x3D; false<br>      this.$nextTick(function () &#123;<br>        this.isRouterAlive &#x3D; true<br>      &#125;)<br>    &#125;<br>  &#125;<br>&#125;<br>&lt;&#x2F;script&gt;<br><br>&lt;script&gt;<br>&#x2F;&#x2F;页面使用<br>export default(&#123;<br>  inject: [&#39;reload&#39;], &#x2F;&#x2F; reload的使用 就好像继承一样<br>  name: &#39;CommModity&#39;,<br>  data: function () &#123;<br>    return &#123;<br>      tableData: [],<br>      Options: [],<br>      SelectValue: &#39;&#39;,<br>      needLoadingRequestCount: 0<br>    &#125;<br>  &#125;,<br>    methods: &#123;<br>        handleDelete (index, row) &#123;<br>          var that &#x3D; this<br>          &#x2F;&#x2F; elementui confirm 提示<br>          this.$confirm(&#39;此操作将永久删除此信息, 是否继续?&#39;, &#39;提示&#39;, &#123;<br>            confirmButtonText: &#39;确定&#39;,<br>            cancelButtonText: &#39;取消&#39;,<br>            type: &#39;warning&#39;<br>          &#125;).then(() &#x3D;&gt; &#123;<br>            that.$axios(&#123;<br>              method: &#39;GET&#39;,<br>              url: that.api.baseURL + &#39;Commodity&#x2F;DeleteComm?CommId&#x3D;&#39; + row.id<br>            &#125;).then(() &#x3D;&gt; &#123; &#x2F;&#x2F; 这里使用了ES6的语法<br>              that.$message(&#123;<br>                type: &#39;warning&#39;,<br>                message: &#39;删除成功&#39;<br>              &#125;)<br>              that.reload()<br>            &#125;).catch((error) &#x3D;&gt;<br>              console.log(error) &#x2F;&#x2F; 请求失败返回的数据<br>            )<br>          &#125;)<br>        &#125;<br>      &#125;,<br>    &#125;<br>&#125;<br>  <br>&lt;&#x2F;script&gt;<br></code></pre></td></tr></table></figure>
+<p>15、局部Loading</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs vue">&#x2F;&#x2F; 打开loading<br>let loadingInstance &#x3D; Loading.service(&#123;<br>        lock: true,<br>        text: &#39;Loading...&#39;,<br>        background: &#39;rgba(0,0,0,0.1)&#39;,<br>        target: document.querySelector(&#39;#app div&#39;)<br>      &#125;)<br>loadingInstance.close() &#x2F;&#x2F; 关闭loading<br></code></pre></td></tr></table></figure>
+<p>16、Vue-ElementUI-Admin框架的下载安装</p>
+<p>git：<a target="_blank" rel="noopener" href="https://github.com/PanJiaChen/vue-element-admin.git">https://github.com/PanJiaChen/vue-element-admin.git</a></p>
+<p>下载node-sass：</p>
+<p>npm config set sass_binary_site=<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/node-sass">https://npm.taobao.org/mirrors/node-sass</a><br>重新 npm install</p>
+<p>ssh设置：$ ssh-keygen -t rsa -C ‘2545664565@qq.com’</p>
+<p>npm run dev</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Vue/">Vue</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/12/20/ComingOrPast/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ComingOrPast</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/12/20/For-ABP/">
+                        <span class="hidden-mobile">For-ABP</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
