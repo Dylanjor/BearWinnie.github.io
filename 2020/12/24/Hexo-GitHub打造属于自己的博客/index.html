@@ -196,7 +196,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      756 字
+      757 字
     </span>
   
 
@@ -264,8 +264,14 @@
 </li>
 <li><p>新建一个空文件夹(<em>hexo</em>)<strong>打开Git Bash</strong> <em>cd hexo</em> ,  <em>hexo init</em></p>
 </li>
-<li><p>```bash<br>$ hexo g #生成<br>$ hexo s #运行<br>$ hexo d #推送到GitHub远程<br>$ hexo clean #</p>
-<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs oxygene"><br>- 找一个好看的主题这里使用的是__*hexo-theme-fluid*__<br><br>- git clone https:<span class="hljs-comment">//github.com/fluid-dev/hexo-theme-fluid.git themes/fluid</span><br><br>- 然后将_hexo_下的__config.yml_ theme改成_fluid_与文件名一致<br><br>  ```bash<br>  pretty_urls:<br>    trailing_index: <span class="hljs-keyword">false</span> # <span class="hljs-keyword">Set</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">false</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">remove</span> trailing <span class="hljs-string">&#x27;index.html&#x27;</span> <span class="hljs-keyword">from</span> permalinks<br>    trailing_html: <span class="hljs-keyword">true</span> # <span class="hljs-keyword">Set</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">false</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">remove</span> trailing <span class="hljs-string">&#x27;.html&#x27;</span> <span class="hljs-keyword">from</span> permalinks<br>  # 主题<br>  theme: hexo-theme-fluids<br>  deploy:<br>    <span class="hljs-keyword">type</span>: git<br>    repo: git@github.com:Dylanjor/Dylanjor.github.io.git<br>    branch: master<br></code></pre></td></tr></table></figure></li>
+<li><p><code>$ hexo g #生成 $ hexo s #运行 $ hexo d #推送到GitHub远程 $ hexo clean #清除生成的垃圾</code></p>
+</li>
+<li><p>找一个好看的主题这里使用的是<strong><em>hexo-theme-fluid</em></strong></p>
+</li>
+<li><p>git clone <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid.git">https://github.com/fluid-dev/hexo-theme-fluid.git</a> themes/fluid</p>
+</li>
+<li><p>然后将_hexo_下的__config.yml_ theme改成_fluid_与文件名一致</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">pretty_urls:<br>  trailing_index: <span class="hljs-literal">false</span> <span class="hljs-comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span><br>  trailing_html: <span class="hljs-literal">true</span> <span class="hljs-comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br><span class="hljs-comment"># 主题</span><br>theme: hexo-theme-fluids<br>deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repo: git@github.com:Dylanjor/Dylanjor.github.io.git<br>  branch: master<br></code></pre></td></tr></table></figure></li>
 <li><p>执行<em>hexo clean,hexo g,hexo s</em><a target="_blank" rel="noopener" href="http://localhost:4000/">预览</a></p>
 </li>
 <li><p><strong>注意:</strong> 这里要下载 <code>npm install hexo-deployer-git --save</code> 不然会报错</p>
