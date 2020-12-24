@@ -318,6 +318,38 @@
             </div>
 
             
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.0/dist/gitalk.min.js', function () {
+        var gitalk = new Gitalk({
+          clientID: 'e4bfee3795553cbee3a9',
+          clientSecret: 'f8dc1d6a99a5594a25b8f9e1fc10d80bbf030ac0',
+          repo: 'Issues',
+          owner: 'Dylanjor',
+          admin: ["Dylanjor"],
+          id: 'a4d6d3daa312e801fc09b840280dbf0c',
+          language: 'zh-CN',
+          labels: ["Gitalk"],
+          perPage: 10,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
+        });
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
           </article>
         </div>
       </div>
