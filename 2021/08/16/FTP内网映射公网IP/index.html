@@ -284,7 +284,7 @@
 <li>NPS 穿透</li>
 </ul>
 <h3 id="2-Ftp连接（以下皆为本人理解-有误请谅解）"><a href="#2-Ftp连接（以下皆为本人理解-有误请谅解）" class="headerlink" title="2.Ftp连接（以下皆为本人理解 有误请谅解）"></a>2.Ftp连接（以下皆为本人理解 有误请谅解）</h3><ul>
-<li><p>FTP服务器端分为两个高端端口 一个是<strong>命令端口</strong>就是管控连接的端口<strong>20</strong>，一个是传输、获取数据的端口<strong>20</strong>(在主动<strong>PROT</strong>连接的时候为20 在<strong>Passive</strong>被动连接的情况下为服务器端返回客户器端的<strong>动态端口</strong>也可以使用工具 固定住 端口 以下使用的为 FileZilla Server)</p>
+<li><p>FTP服务器端分为两个高端端口 一个是<strong>命令端口</strong>就是管控连接的端口<strong>20</strong>，一个是传输、获取数据的端口<strong>20</strong>(在主动<strong>PORT</strong>连接的时候为20 在<strong>Passive</strong>被动连接的情况下为服务器端返回客户器端的<strong>动态端口</strong>也可以使用工具 固定住 端口 以下使用的为 FileZilla Server)</p>
 </li>
 <li><p>一种方式是<strong>PORT</strong> 客户端主动连接 客户端在连接上服务器之后 这种情况下就是已经连上21端口 获取目录的时候要连接20端口 内网映射 案例中未使用 所以猜测应该是映射<strong>20端口到20端口</strong> 相对应</p>
 </li>
